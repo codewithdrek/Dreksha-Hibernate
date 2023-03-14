@@ -18,34 +18,39 @@ public class Review  {
 	@Column(name ="id")
 	private int id;
 	
-	@Column(name="comments")
-	String comments ;
-	
+	@Column(name="comment")
+	String comment ;
+
+
 	//define constructors
-	public Review(String comments) {
-		this.comments = comments;
+
+	public Review() {
+	}
+
+	
+	public Review(String comment) {
+		this.comment = comment;
 	}
 	
+
+
 	//define getter/setter
-
-	
-	
-
-	public String getComments() {
-		return comments;
-	}
-	public void setComments(String comments) {
-		this.comments = comments;
+	public String getComment() {
+		return comment;
 	}
 
-	
-	
+
+	public void setComment(String comment) {
+		this.comment = comment;
+	}
+
+
 	//define toString
 	@Override
 	public String toString() {
-		return "Review [id=" + id + ", comments=" + comments + "]";
+		return "Review [id=" + id + ", comment=" + comment + "]";
 	}
 	
+
 	
-	//annotated filed
 }
