@@ -36,8 +36,9 @@ public class InstructorDetail {
 	//private Instructor instructor;
 	
 	//mappedBy = "instructorDetail" check in Instructor class this object var name
+	//
 	@OneToOne(mappedBy = "instructorDetail",cascade = {CascadeType.ALL})
-	private Instructor instructor;
+	private Instructor instructor; //instructor is mappby in Instructor Model class check
 	
 	
 	public InstructorDetail() {
